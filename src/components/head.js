@@ -9,6 +9,7 @@ const Head = ({ title }) => {
         siteMetadata {
           title
           description
+          teaserImage
         }
       }
     }
