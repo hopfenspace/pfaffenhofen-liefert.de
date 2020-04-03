@@ -13,13 +13,12 @@ const Contact = () => {
           <h1 className='ui header'>
             <div className='content'>
             <span className='page-title'>
-              We must act now.
+              pfaffenhofen-liefert.de
             </span>
               <div className='sub header'>
-                Get in touch with the MUIZ-CAN network and find out more. If you are looking for information about the COVID-19 pandemic, visit our <Link to={'/'}>Information</Link> page.
               </div>
               <Link to={'/'} className={'ui black icon button'}>
-                <i className={'icon map'}/> Go to the map
+                <i className={'icon map'}/> Zurück zur Karte.
               </Link>
             </div>
           </h1>
@@ -27,21 +26,18 @@ const Contact = () => {
       </section>
 
       <section className='ui vertical segment' style={{minHeight: '55vh'}}>
-        <div className='ui text container formcontainer'><div className={'ui yellow message'} style={{fontWeight: 500, fontStyle: 'italic'}}>
-          <i className={'icon external link'} />Read the Tutorial about how to set up your own map <a href={'https://medium.com/@marcfehr/how-to-build-a-fast-and-reliable-community-mapping-tool-with-gatsbyjs-and-firebase-74a0fa6b5b83?source=userActivityShare-f57d26da4972-1584988662&_branch_match_id=689400773593121406'} target={'_blank'} rel={'noopener noreferrer'}>here</a>.
-        </div>
-          <h2>Reach out via email</h2>
-          <ul>
-            <li>
-              {/* If you're a developer, add yourself here and create a MR on Gitlab do get onto the original repository */}
-              <a href='mailto:marc.fehr@gmail.com'>
-                Marc Fehr
-              </a>, developer and maintainer of{' '}
-              <a href={'https://www.whozinberg.org'} target={'_blank'} rel={'noopener noreferrer'}>
-                whozinberg.org
-              </a>
-            </li>
-          </ul>
+        <div className='ui text container formcontainer'>
+          <h2>Diese Seite wird betrieben von dem</h2>
+          Bürgernetz Landkreis Pfaffenhofen e.V.<br />
+          Sparkassenplatz 11<br />
+          85276 Pfaffenhofen<br />
+          D-85276 Pfaffenhofen/Ilm<br />
+          <br />
+          Email: liefert@pfaffenhofen.de<br />
+          Telefon: 08441 4980299<br />
+          <div className={'ui yellow message'} style={{fontWeight: 500, fontStyle: 'italic'}}>
+            <i className={'icon external link'} />Read the Tutorial about how to set up your own map <a href={'https://medium.com/@marcfehr/how-to-build-a-fast-and-reliable-community-mapping-tool-with-gatsbyjs-and-firebase-74a0fa6b5b83?source=userActivityShare-f57d26da4972-1584988662&_branch_match_id=689400773593121406'} target={'_blank'} rel={'noopener noreferrer'}>here</a>.
+          </div>
         </div>
       </section>
     </Layout>
