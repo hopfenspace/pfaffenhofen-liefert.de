@@ -1,6 +1,9 @@
-import * as turf from '@turf/turf'
+import * as turf from '@turf/turf';
 
-const polygon = turf.polygon(
+import data from './paf.geo.json';
+const polygon = turf.polygon(data.features[0].geometry.coordinates);
+
+/*const polygon = turf.polygon(
   [
     [
       [
@@ -25,7 +28,7 @@ const polygon = turf.polygon(
       ]
     ]
   ]
-)
+)*/
 
 const masked = turf.mask(polygon);
 
