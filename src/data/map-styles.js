@@ -14,10 +14,10 @@ module.exports = {
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "https://api.maptiler.com/tiles/v3/tiles.json?key=RnP5nHzoMbd0K9YU1Gk6#"
+      "url": "https://api.maptiler.com/tiles/v3/tiles.json?key=AMbxxLVMej6iv4stQc0i"
     }
   },
-  "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key=RnP5nHzoMbd0K9YU1Gk6",
+  "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key=AMbxxLVMej6iv4stQc0i",
   "layers": [
     {
       "id": "background",
