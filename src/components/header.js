@@ -39,18 +39,6 @@ const Header = () => {
         </div>
         <div className={'ui four wide right aligned column'} style={{padding: '.8rem 1.4rem 0 0'}}>
           <div className={'icon-container'}>
-            <a href={'https://wa.me/?text=' + shareText} target={'_blank'} rel={'noopener noreferrer'}>
-              <i className='ui icon whatsapp' />
-            </a>
-            <a href={'https://www.facebook.com/sharer/sharer.php?u=https://www.whosinberg.org'} target={'_blank'} rel={'noopener noreferrer'}>
-              <i className='ui icon facebook' />
-            </a>
-            <a href={'https://twitter.com/intent/tweet?hashtags=' + shareHashtags +'&text=' + shareText} target={'_blank'} rel={'noopener noreferrer'}>
-              <i className='ui icon twitter' />
-            </a>
-            <a href={"mailto:?body=" + shareText + "&subject=Who'sinberg.org"}>
-              <i className='ui icon envelope' />
-            </a>
           </div>
         </div>
       </div>

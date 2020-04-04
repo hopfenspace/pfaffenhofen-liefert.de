@@ -43,24 +43,20 @@ const Index = () => {
         </section>
         <section className='ui vertical segment intro'>
           <div className='ui text container formcontainer'>
-            <h2>What do I see on this map?</h2>
+            <h2>Wie lege ich einen Eintrag an?</h2>
             <p>
-              At the moment, the map shows people and shops who offer their help and services for the community in and around Muizenberg. I'm currently working to add more functionality to it:
+              Sie können weitere Einträge hinzufügen. Wir prüfen neue Einträge und schalten diese frei, bevor sie auf der Karte erscheinen.
             </p>
-            <ul>
-              <li>A "help" <strong>function for vulnerable people and people in need</strong> who's data need to be protected. This will will soon be online.</li>
-              <li>Also, there will be an option to offer <strong>help without being on a map</strong>, if the offered services are not bound to any location.</li>
-            </ul>
             <Link
               to={'/add'}
               className='ui primary fluid button'
               style={{marginTop: '1rem'}}
             >
-              Add public information now
+              Eintrag erfassen
             </Link>
-            <h2>How can I delete myself from the app?</h2>
+            <h2>Wie kann ich mich austragen lassen?</h2>
             <p>
-              Write me an email to{' '}
+              Sie sind auf der Karte und wollen das garnicht? Schreiben sie einfach eine E-Mail an {' '}
               <a
                 href={`mailto:${data.site.siteMetadata.email}`}
                 target='_blank'
@@ -68,7 +64,7 @@ const Index = () => {
               >
                 {data.site.siteMetadata.email}
               </a>
-              .{' '}Otherwise, all your data will be automatically deleted once this map is not being needed anymore.
+              .{' '}
             </p>
           </div>
         </section>
