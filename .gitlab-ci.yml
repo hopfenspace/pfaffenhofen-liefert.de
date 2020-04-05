@@ -1,8 +1,7 @@
 deploy_production:
   stage: deploy
-  image: tetraweb/php:7.1
+  image: kroniak/ssh-client
   before_script:
-    - 'apt-get update -y && apt-get install openssh-client -y'
     - mkdir -p ~/.ssh
     - eval $(ssh-agent -s)
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
