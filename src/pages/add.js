@@ -15,10 +15,10 @@ const Add = () => {
             <h1 className='ui header'>
               <div className='content'>
               <span className='page-title'>
-                You've got some useful information to share? Test.
+              Haben Sie einen neuen Lieferdienst für ihre Waren? Tragen Sie sich ein.
               </span>
                 <div className='sub header'>
-                  While shops and restaurants are closing, people get more and more isolated. Stay safe, help where you can and keep your mental hygiene up. Thanks for sharing your information in the interactive map below.
+                Wenn Sie ganz neu einen Lieferdienst anbieten, dann tragen Sie sich bitte hier ein.
                 </div>
               </div>
             </h1>
@@ -27,10 +27,10 @@ const Add = () => {
 
         <section className='ui vertical segment'>
           <div className='ui text container formcontainer'>
-            <h2>This is how it works</h2>
-            Choose a place on the map where you want the information to appear. You'll be asked to provide us with information about your entry before you can send it off. <strong>We are going to check all entries manually</strong>. Once your entry is approvoved, you'll see it{' '}
+            <h2>So funktioniert es:</h2>
+            Wählen Sie auf der Karte den Ort aus, in dem sich Ihr Geschäft befindet. Danach können Sie zusätzliche Infos angeben, was sie genau anbieten und wie Kunden ihre Waren oder Dienstleistungen beziehen können. Wir veröffentlichen nach einer Prüfung diese Daten{' '}
             <Link to='/'>
-              here
+            in dieser Karte
             </Link>.
           </div>
         </section>
