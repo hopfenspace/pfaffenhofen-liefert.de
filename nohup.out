@@ -1,0 +1,1288 @@
+success open and validate gatsby-configs - 0.060s
+success load plugins - 0.353s
+success onPreInit - 0.031s
+info One or more of your plugins have changed since the last time you ran Gatsby. As
+a precaution, we're deleting your site's cache to ensure there's no stale data.
+success initialize cache - 0.061s
+success copy gatsby files - 0.066s
+success onPreBootstrap - 0.011s
+success createSchemaCustomization - 0.008s
+
+[Firebase Source] Fetching data for MapPoints...
+
+[Firebase Source] Data for MapPoints loaded in 1231 ms
+success source and transform nodes - 1.421s
+success building schema - 1.014s
+success createPages - 0.004s
+success createPagesStatefully - 0.285s
+success onPreExtractQueries - 0.004s
+success update schema - 0.135s
+success extract queries from components - 1.119s
+success write out requires - 0.073s
+success write out redirect data - 0.071s
+success onPostBootstrap - 0.004s
+⠀
+info bootstrap finished - 12.605 s
+⠀
+success run queries - 0.170s - 14/14 82.16/s
+⠀
+You can now view gatsby-bootcamp-blog in the browser.
+⠀
+  Local:            http://localhost:8000/
+  On Your Network:  http://10.0.0.114:8000/
+⠀
+View GraphiQL, an in-browser IDE, to explore your site's data and schema
+⠀
+  Local:            http://localhost:8000/___graphql
+  On Your Network:  http://10.0.0.114:8000/___graphql
+⠀
+Note that the development build is not optimized.
+To create a production build, use gatsby build
+⠀
+warn ESLintError:
+/root/community-isolation-map/src/components/map-add/animatedmap/component.js
+  147:6  warning  React Hook useEffect has missing dependencies:
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/activationButton.js
+  19:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  19:9   warning  Static HTML elements with event handlers require a role
+                         jsx-a11y/no-static-element-interactions
+  26:11  warning  img elements must have an alt prop, either with meaningful text, or an empty
+string for decorative images  jsx-a11y/alt-text
+  31:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  31:9   warning  Static HTML elements with event handlers require a role
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/component.js
+  228:6  warning  React Hook useEffect has missing dependencies: 'MapPoints',
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/jsonToGeoJson.js
+  6:22  warning  Expected to return a value in arrow function  array-callback-return
+
+✖ 1 problem (0 errors, 1 warning)
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.add.js
+   83:6   warning  React Hook React.useEffect has missing dependencies: 'content',
+'data.site.siteMetadata.mapData.bounds', and 'map'. Either include them or remove the dependency
+array. You can also do a functional update 'setContent(c => ...)' if you only need 'content' in the
+'setContent' call  react-hooks/exhaustive-deps
+  108:6   warning  React Hook React.useEffect has a missing dependency: 'content'. Either include it
+ or remove the dependency array
+
+react-hooks/exhaustive-deps
+  195:17  warning  A form label must be associated with a control
+
+
+jsx-a11y/label-has-associated-control
+  196:17  warning  onBlur must be used instead of onchange, unless absolutely necessary and it
+causes no negative consequences for keyboard only or screen reader users
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.main.js
+  23:5  warning  React Hook useEffect has a missing dependency: 'map'. Either include it or remove
+the dependency array  react-hooks/exhaustive-deps
+
+✖ 1 problem (0 errors, 1 warning)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+success Building development bundle - 21.022s
+success extract queries from components - 0.383s
+warn ESLintError:
+/root/community-isolation-map/src/components/map-add/animatedmap/component.js
+  147:6  warning  React Hook useEffect has missing dependencies:
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/activationButton.js
+  19:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  19:9   warning  Static HTML elements with event handlers require a role
+                         jsx-a11y/no-static-element-interactions
+  26:11  warning  img elements must have an alt prop, either with meaningful text, or an empty
+string for decorative images  jsx-a11y/alt-text
+  31:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  31:9   warning  Static HTML elements with event handlers require a role
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/component.js
+  228:6  warning  React Hook useEffect has missing dependencies: 'MapPoints',
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/jsonToGeoJson.js
+  6:22  warning  Expected to return a value in arrow function  array-callback-return
+
+✖ 1 problem (0 errors, 1 warning)
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.add.js
+   83:6   warning  React Hook React.useEffect has missing dependencies: 'content',
+'data.site.siteMetadata.mapData.bounds', and 'map'. Either include them or remove the dependency
+array. You can also do a functional update 'setContent(c => ...)' if you only need 'content' in the
+'setContent' call  react-hooks/exhaustive-deps
+  108:6   warning  React Hook React.useEffect has a missing dependency: 'content'. Either include it
+ or remove the dependency array
+
+react-hooks/exhaustive-deps
+  195:17  warning  A form label must be associated with a control
+
+
+jsx-a11y/label-has-associated-control
+  196:17  warning  onBlur must be used instead of onchange, unless absolutely necessary and it
+causes no negative consequences for keyboard only or screen reader users
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.main.js
+  23:5  warning  React Hook useEffect has a missing dependency: 'map'. Either include it or remove
+the dependency array  react-hooks/exhaustive-deps
+
+✖ 1 problem (0 errors, 1 warning)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+success Re-building development bundle - 1.629s
+success extract queries from components - 0.461s
+warn ESLintError:
+/root/community-isolation-map/src/components/map-add/animatedmap/component.js
+  147:6  warning  React Hook useEffect has missing dependencies:
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/activationButton.js
+  19:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  19:9   warning  Static HTML elements with event handlers require a role
+                         jsx-a11y/no-static-element-interactions
+  26:11  warning  img elements must have an alt prop, either with meaningful text, or an empty
+string for decorative images  jsx-a11y/alt-text
+  31:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  31:9   warning  Static HTML elements with event handlers require a role
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/component.js
+  228:6  warning  React Hook useEffect has missing dependencies: 'MapPoints',
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/jsonToGeoJson.js
+  6:22  warning  Expected to return a value in arrow function  array-callback-return
+
+✖ 1 problem (0 errors, 1 warning)
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.add.js
+   83:6   warning  React Hook React.useEffect has missing dependencies: 'content',
+'data.site.siteMetadata.mapData.bounds', and 'map'. Either include them or remove the dependency
+array. You can also do a functional update 'setContent(c => ...)' if you only need 'content' in the
+'setContent' call  react-hooks/exhaustive-deps
+  108:6   warning  React Hook React.useEffect has a missing dependency: 'content'. Either include it
+ or remove the dependency array
+
+react-hooks/exhaustive-deps
+  195:17  warning  A form label must be associated with a control
+
+
+jsx-a11y/label-has-associated-control
+  196:17  warning  onBlur must be used instead of onchange, unless absolutely necessary and it
+causes no negative consequences for keyboard only or screen reader users
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.main.js
+  23:5  warning  React Hook useEffect has a missing dependency: 'map'. Either include it or remove
+the dependency array  react-hooks/exhaustive-deps
+
+✖ 1 problem (0 errors, 1 warning)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+success Re-building development bundle - 1.919s
+success extract queries from components - 0.170s
+warn ESLintError:
+/root/community-isolation-map/src/components/map-add/animatedmap/component.js
+  147:6  warning  React Hook useEffect has missing dependencies:
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/activationButton.js
+  19:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  19:9   warning  Static HTML elements with event handlers require a role
+                         jsx-a11y/no-static-element-interactions
+  26:11  warning  img elements must have an alt prop, either with meaningful text, or an empty
+string for decorative images  jsx-a11y/alt-text
+  31:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  31:9   warning  Static HTML elements with event handlers require a role
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/component.js
+  228:6  warning  React Hook useEffect has missing dependencies: 'MapPoints',
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/jsonToGeoJson.js
+  6:22  warning  Expected to return a value in arrow function  array-callback-return
+
+✖ 1 problem (0 errors, 1 warning)
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.add.js
+   83:6   warning  React Hook React.useEffect has missing dependencies: 'content',
+'data.site.siteMetadata.mapData.bounds', and 'map'. Either include them or remove the dependency
+array. You can also do a functional update 'setContent(c => ...)' if you only need 'content' in the
+'setContent' call  react-hooks/exhaustive-deps
+  108:6   warning  React Hook React.useEffect has a missing dependency: 'content'. Either include it
+ or remove the dependency array
+
+react-hooks/exhaustive-deps
+  195:17  warning  A form label must be associated with a control
+
+
+jsx-a11y/label-has-associated-control
+  196:17  warning  onBlur must be used instead of onchange, unless absolutely necessary and it
+causes no negative consequences for keyboard only or screen reader users
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.main.js
+  23:5  warning  React Hook useEffect has a missing dependency: 'map'. Either include it or remove
+the dependency array  react-hooks/exhaustive-deps
+
+✖ 1 problem (0 errors, 1 warning)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+success Re-building development bundle - 1.503s
+success extract queries from components - 0.153s
+warn ESLintError:
+/root/community-isolation-map/src/components/map-add/animatedmap/component.js
+  147:6  warning  React Hook useEffect has missing dependencies:
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/activationButton.js
+  19:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  19:9   warning  Static HTML elements with event handlers require a role
+                         jsx-a11y/no-static-element-interactions
+  26:11  warning  img elements must have an alt prop, either with meaningful text, or an empty
+string for decorative images  jsx-a11y/alt-text
+  31:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  31:9   warning  Static HTML elements with event handlers require a role
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/component.js
+  228:6  warning  React Hook useEffect has missing dependencies: 'MapPoints',
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/jsonToGeoJson.js
+  6:22  warning  Expected to return a value in arrow function  array-callback-return
+
+✖ 1 problem (0 errors, 1 warning)
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.add.js
+   83:6   warning  React Hook React.useEffect has missing dependencies: 'content',
+'data.site.siteMetadata.mapData.bounds', and 'map'. Either include them or remove the dependency
+array. You can also do a functional update 'setContent(c => ...)' if you only need 'content' in the
+'setContent' call  react-hooks/exhaustive-deps
+  108:6   warning  React Hook React.useEffect has a missing dependency: 'content'. Either include it
+ or remove the dependency array
+
+react-hooks/exhaustive-deps
+  195:17  warning  A form label must be associated with a control
+
+
+jsx-a11y/label-has-associated-control
+  196:17  warning  onBlur must be used instead of onchange, unless absolutely necessary and it
+causes no negative consequences for keyboard only or screen reader users
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.main.js
+  23:5  warning  React Hook useEffect has a missing dependency: 'map'. Either include it or remove
+the dependency array  react-hooks/exhaustive-deps
+
+✖ 1 problem (0 errors, 1 warning)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+success Re-building development bundle - 1.940s
+success extract queries from components - 0.291s
+warn ESLintError:
+/root/community-isolation-map/src/components/map-add/animatedmap/component.js
+  147:6  warning  React Hook useEffect has missing dependencies:
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/activationButton.js
+  19:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  19:9   warning  Static HTML elements with event handlers require a role
+                         jsx-a11y/no-static-element-interactions
+  26:11  warning  img elements must have an alt prop, either with meaningful text, or an empty
+string for decorative images  jsx-a11y/alt-text
+  31:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  31:9   warning  Static HTML elements with event handlers require a role
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/component.js
+  228:6  warning  React Hook useEffect has missing dependencies: 'MapPoints',
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/jsonToGeoJson.js
+  6:22  warning  Expected to return a value in arrow function  array-callback-return
+
+✖ 1 problem (0 errors, 1 warning)
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.add.js
+   83:6   warning  React Hook React.useEffect has missing dependencies: 'content',
+'data.site.siteMetadata.mapData.bounds', and 'map'. Either include them or remove the dependency
+array. You can also do a functional update 'setContent(c => ...)' if you only need 'content' in the
+'setContent' call  react-hooks/exhaustive-deps
+  108:6   warning  React Hook React.useEffect has a missing dependency: 'content'. Either include it
+ or remove the dependency array
+
+react-hooks/exhaustive-deps
+  195:17  warning  A form label must be associated with a control
+
+
+jsx-a11y/label-has-associated-control
+  196:17  warning  onBlur must be used instead of onchange, unless absolutely necessary and it
+causes no negative consequences for keyboard only or screen reader users
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.main.js
+  23:5  warning  React Hook useEffect has a missing dependency: 'map'. Either include it or remove
+the dependency array  react-hooks/exhaustive-deps
+
+✖ 1 problem (0 errors, 1 warning)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+success Re-building development bundle - 1.594s
+success extract queries from components - 0.082s
+warn ESLintError:
+/root/community-isolation-map/src/components/map-add/animatedmap/component.js
+  147:6  warning  React Hook useEffect has missing dependencies:
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/activationButton.js
+  19:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  19:9   warning  Static HTML elements with event handlers require a role
+                         jsx-a11y/no-static-element-interactions
+  26:11  warning  img elements must have an alt prop, either with meaningful text, or an empty
+string for decorative images  jsx-a11y/alt-text
+  31:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  31:9   warning  Static HTML elements with event handlers require a role
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/component.js
+  228:6  warning  React Hook useEffect has missing dependencies: 'MapPoints',
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/jsonToGeoJson.js
+  6:22  warning  Expected to return a value in arrow function  array-callback-return
+
+✖ 1 problem (0 errors, 1 warning)
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.add.js
+   83:6   warning  React Hook React.useEffect has missing dependencies: 'content',
+'data.site.siteMetadata.mapData.bounds', and 'map'. Either include them or remove the dependency
+array. You can also do a functional update 'setContent(c => ...)' if you only need 'content' in the
+'setContent' call  react-hooks/exhaustive-deps
+  108:6   warning  React Hook React.useEffect has a missing dependency: 'content'. Either include it
+ or remove the dependency array
+
+react-hooks/exhaustive-deps
+  195:17  warning  A form label must be associated with a control
+
+
+jsx-a11y/label-has-associated-control
+  196:17  warning  onBlur must be used instead of onchange, unless absolutely necessary and it
+causes no negative consequences for keyboard only or screen reader users
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.main.js
+  23:5  warning  React Hook useEffect has a missing dependency: 'map'. Either include it or remove
+the dependency array  react-hooks/exhaustive-deps
+
+✖ 1 problem (0 errors, 1 warning)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+success Re-building development bundle - 1.371s
+success extract queries from components - 0.263s
+warn ESLintError:
+/root/community-isolation-map/src/components/map-add/animatedmap/component.js
+  147:6  warning  React Hook useEffect has missing dependencies:
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/activationButton.js
+  19:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  19:9   warning  Static HTML elements with event handlers require a role
+                         jsx-a11y/no-static-element-interactions
+  26:11  warning  img elements must have an alt prop, either with meaningful text, or an empty
+string for decorative images  jsx-a11y/alt-text
+  31:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  31:9   warning  Static HTML elements with event handlers require a role
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/component.js
+  228:6  warning  React Hook useEffect has missing dependencies: 'MapPoints',
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/jsonToGeoJson.js
+  6:22  warning  Expected to return a value in arrow function  array-callback-return
+
+✖ 1 problem (0 errors, 1 warning)
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.add.js
+   83:6   warning  React Hook React.useEffect has missing dependencies: 'content',
+'data.site.siteMetadata.mapData.bounds', and 'map'. Either include them or remove the dependency
+array. You can also do a functional update 'setContent(c => ...)' if you only need 'content' in the
+'setContent' call  react-hooks/exhaustive-deps
+  108:6   warning  React Hook React.useEffect has a missing dependency: 'content'. Either include it
+ or remove the dependency array
+
+react-hooks/exhaustive-deps
+  195:17  warning  A form label must be associated with a control
+
+
+jsx-a11y/label-has-associated-control
+  196:17  warning  onBlur must be used instead of onchange, unless absolutely necessary and it
+causes no negative consequences for keyboard only or screen reader users
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.main.js
+  23:5  warning  React Hook useEffect has a missing dependency: 'map'. Either include it or remove
+the dependency array  react-hooks/exhaustive-deps
+
+✖ 1 problem (0 errors, 1 warning)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+success Re-building development bundle - 1.615s
+success extract queries from components - 0.109s
+warn ESLintError:
+/root/community-isolation-map/src/components/map-add/animatedmap/component.js
+  147:6  warning  React Hook useEffect has missing dependencies:
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/activationButton.js
+  19:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  19:9   warning  Static HTML elements with event handlers require a role
+                         jsx-a11y/no-static-element-interactions
+  26:11  warning  img elements must have an alt prop, either with meaningful text, or an empty
+string for decorative images  jsx-a11y/alt-text
+  31:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  31:9   warning  Static HTML elements with event handlers require a role
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/component.js
+  228:6  warning  React Hook useEffect has missing dependencies: 'MapPoints',
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/jsonToGeoJson.js
+  6:22  warning  Expected to return a value in arrow function  array-callback-return
+
+✖ 1 problem (0 errors, 1 warning)
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.add.js
+   83:6   warning  React Hook React.useEffect has missing dependencies: 'content',
+'data.site.siteMetadata.mapData.bounds', and 'map'. Either include them or remove the dependency
+array. You can also do a functional update 'setContent(c => ...)' if you only need 'content' in the
+'setContent' call  react-hooks/exhaustive-deps
+  108:6   warning  React Hook React.useEffect has a missing dependency: 'content'. Either include it
+ or remove the dependency array
+
+react-hooks/exhaustive-deps
+  195:17  warning  A form label must be associated with a control
+
+
+jsx-a11y/label-has-associated-control
+  196:17  warning  onBlur must be used instead of onchange, unless absolutely necessary and it
+causes no negative consequences for keyboard only or screen reader users
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.main.js
+  23:5  warning  React Hook useEffect has a missing dependency: 'map'. Either include it or remove
+the dependency array  react-hooks/exhaustive-deps
+
+✖ 1 problem (0 errors, 1 warning)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+success Re-building development bundle - 1.397s
+success extract queries from components - 0.124s
+warn ESLintError:
+/root/community-isolation-map/src/components/map-add/animatedmap/component.js
+  147:6  warning  React Hook useEffect has missing dependencies:
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/activationButton.js
+  19:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  19:9   warning  Static HTML elements with event handlers require a role
+                         jsx-a11y/no-static-element-interactions
+  26:11  warning  img elements must have an alt prop, either with meaningful text, or an empty
+string for decorative images  jsx-a11y/alt-text
+  31:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  31:9   warning  Static HTML elements with event handlers require a role
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/component.js
+  228:6  warning  React Hook useEffect has missing dependencies: 'MapPoints',
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/jsonToGeoJson.js
+  6:22  warning  Expected to return a value in arrow function  array-callback-return
+
+✖ 1 problem (0 errors, 1 warning)
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.add.js
+   83:6   warning  React Hook React.useEffect has missing dependencies: 'content',
+'data.site.siteMetadata.mapData.bounds', and 'map'. Either include them or remove the dependency
+array. You can also do a functional update 'setContent(c => ...)' if you only need 'content' in the
+'setContent' call  react-hooks/exhaustive-deps
+  108:6   warning  React Hook React.useEffect has a missing dependency: 'content'. Either include it
+ or remove the dependency array
+
+react-hooks/exhaustive-deps
+  195:17  warning  A form label must be associated with a control
+
+
+jsx-a11y/label-has-associated-control
+  196:17  warning  onBlur must be used instead of onchange, unless absolutely necessary and it
+causes no negative consequences for keyboard only or screen reader users
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.main.js
+  23:5  warning  React Hook useEffect has a missing dependency: 'map'. Either include it or remove
+the dependency array  react-hooks/exhaustive-deps
+
+✖ 1 problem (0 errors, 1 warning)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+
+ ERROR #98123  WEBPACK
+
+Generating development JavaScript bundle failed
+
+
+/root/community-isolation-map/src/pages/contact.js
+  37:9  error  Parsing error: Expected corresponding JSX closing tag for <section>
+
+  35 |           Email: liefert@pfaffenhofen.de
+  36 |           Telefon: 08441:4980299
+> 37 |         </div>
+     |         ^
+  38 |         <div className='ui text container formcontainer'><div className={'ui yellow message'} style={{fontWeight: 500, fontStyle: 'italic'}}>
+  39 |           <i className={'icon external link'} />Read the Tutorial about how to set up your own map <a href={'https://medium.com/@marcfehr/how-to-build-a-fast-and-reliable-community-mapping-tool-with-gatsbyjs-and-firebase-74a0fa6b5b83?source=userActivityShare-f57d26da4972-1584988662&_branch_match_id=689400773593121406'} target={'_blank'} rel={'noopener noreferrer'}>here</a>.
+  40 |         </div>
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+File: src/pages/contact.js
+
+
+ ERROR #98123  WEBPACK
+
+Generating development JavaScript bundle failed
+
+/root/community-isolation-map/src/pages/contact.js: Expected corresponding JSX closing tag for <section> (37:8)
+
+  35 |           Email: liefert@pfaffenhofen.de
+  36 |           Telefon: 08441 4980299
+> 37 |         </div>
+     |         ^
+  38 |         <div className='ui text container formcontainer'><div className={'ui yellow message'} style={{fontWeight: 500, fontStyle: 'italic'}}>
+  39 |           <i className={'icon external link'} />Read the Tutorial about how to set up your own map <a href={'https://medium.com/@marcfehr/how-to-build-a-fast-and-reliable-community-mapping-tool-with-gatsbyjs-and-firebase-74a0fa6b5b83?source=userActivityShare-f57d26da4972-1584988662&_branch_match_id=689400773593121406'} target={'_blank'} rel={'noopener noreferrer'}>here</a>.
+  40 |         </div>
+
+File: src/pages/contact.js:37:8
+
+failed Re-building development bundle - 0.916s
+success extract queries from components - 0.137s
+warn ESLintError:
+/root/community-isolation-map/src/components/map-add/animatedmap/component.js
+  147:6  warning  React Hook useEffect has missing dependencies:
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/activationButton.js
+  19:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  19:9   warning  Static HTML elements with event handlers require a role
+                         jsx-a11y/no-static-element-interactions
+  26:11  warning  img elements must have an alt prop, either with meaningful text, or an empty
+string for decorative images  jsx-a11y/alt-text
+  31:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  31:9   warning  Static HTML elements with event handlers require a role
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/component.js
+  228:6  warning  React Hook useEffect has missing dependencies: 'MapPoints',
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/jsonToGeoJson.js
+  6:22  warning  Expected to return a value in arrow function  array-callback-return
+
+✖ 1 problem (0 errors, 1 warning)
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.add.js
+   83:6   warning  React Hook React.useEffect has missing dependencies: 'content',
+'data.site.siteMetadata.mapData.bounds', and 'map'. Either include them or remove the dependency
+array. You can also do a functional update 'setContent(c => ...)' if you only need 'content' in the
+'setContent' call  react-hooks/exhaustive-deps
+  108:6   warning  React Hook React.useEffect has a missing dependency: 'content'. Either include it
+ or remove the dependency array
+
+react-hooks/exhaustive-deps
+  195:17  warning  A form label must be associated with a control
+
+
+jsx-a11y/label-has-associated-control
+  196:17  warning  onBlur must be used instead of onchange, unless absolutely necessary and it
+causes no negative consequences for keyboard only or screen reader users
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.main.js
+  23:5  warning  React Hook useEffect has a missing dependency: 'map'. Either include it or remove
+the dependency array  react-hooks/exhaustive-deps
+
+✖ 1 problem (0 errors, 1 warning)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+
+ ERROR #98123  WEBPACK
+
+Generating development JavaScript bundle failed
+
+
+/root/community-isolation-map/src/pages/contact.js
+  37:9  error  Parsing error: Expected corresponding JSX closing tag for <section>
+
+  35 |           Email: liefert@pfaffenhofen.de<br />
+  36 |           Telefon: 08441:4980299<br />
+> 37 |         </div>
+     |         ^
+  38 |         <div className='ui text container formcontainer'><div className={'ui yellow message'} style={{fontWeight: 500, fontStyle: 'italic'}}>
+  39 |           <i className={'icon external link'} />Read the Tutorial about how to set up your own map <a href={'https://medium.com/@marcfehr/how-to-build-a-fast-and-reliable-community-mapping-tool-with-gatsbyjs-and-firebase-74a0fa6b5b83?source=userActivityShare-f57d26da4972-1584988662&_branch_match_id=689400773593121406'} target={'_blank'} rel={'noopener noreferrer'}>here</a>.
+  40 |         </div>
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+File: src/pages/contact.js
+
+
+ ERROR #98123  WEBPACK
+
+Generating development JavaScript bundle failed
+
+/root/community-isolation-map/src/pages/contact.js: Expected corresponding JSX closing tag for <section> (37:8)
+
+  35 |           Email: liefert@pfaffenhofen.de<br />
+  36 |           Telefon: 08441 4980299<br />
+> 37 |         </div>
+     |         ^
+  38 |         <div className='ui text container formcontainer'><div className={'ui yellow message'} style={{fontWeight: 500, fontStyle: 'italic'}}>
+  39 |           <i className={'icon external link'} />Read the Tutorial about how to set up your own map <a href={'https://medium.com/@marcfehr/how-to-build-a-fast-and-reliable-community-mapping-tool-with-gatsbyjs-and-firebase-74a0fa6b5b83?source=userActivityShare-f57d26da4972-1584988662&_branch_match_id=689400773593121406'} target={'_blank'} rel={'noopener noreferrer'}>here</a>.
+  40 |         </div>
+
+File: src/pages/contact.js:37:8
+
+failed Re-building development bundle - 1.021s
+success extract queries from components - 0.263s
+warn ESLintError:
+/root/community-isolation-map/src/components/map-add/animatedmap/component.js
+  147:6  warning  React Hook useEffect has missing dependencies:
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/activationButton.js
+  19:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  19:9   warning  Static HTML elements with event handlers require a role
+                         jsx-a11y/no-static-element-interactions
+  26:11  warning  img elements must have an alt prop, either with meaningful text, or an empty
+string for decorative images  jsx-a11y/alt-text
+  31:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  31:9   warning  Static HTML elements with event handlers require a role
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/component.js
+  228:6  warning  React Hook useEffect has missing dependencies: 'MapPoints',
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/jsonToGeoJson.js
+  6:22  warning  Expected to return a value in arrow function  array-callback-return
+
+✖ 1 problem (0 errors, 1 warning)
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.add.js
+   83:6   warning  React Hook React.useEffect has missing dependencies: 'content',
+'data.site.siteMetadata.mapData.bounds', and 'map'. Either include them or remove the dependency
+array. You can also do a functional update 'setContent(c => ...)' if you only need 'content' in the
+'setContent' call  react-hooks/exhaustive-deps
+  108:6   warning  React Hook React.useEffect has a missing dependency: 'content'. Either include it
+ or remove the dependency array
+
+react-hooks/exhaustive-deps
+  195:17  warning  A form label must be associated with a control
+
+
+jsx-a11y/label-has-associated-control
+  196:17  warning  onBlur must be used instead of onchange, unless absolutely necessary and it
+causes no negative consequences for keyboard only or screen reader users
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.main.js
+  23:5  warning  React Hook useEffect has a missing dependency: 'map'. Either include it or remove
+the dependency array  react-hooks/exhaustive-deps
+
+✖ 1 problem (0 errors, 1 warning)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+
+ ERROR #98123  WEBPACK
+
+Generating development JavaScript bundle failed
+
+
+/root/community-isolation-map/src/pages/contact.js
+  40:7  error  Parsing error: Expected corresponding JSX closing tag for <div>
+
+  38 |           <i className={'icon external link'} />Read the Tutorial about how to set up your own map <a href={'https://medium.com/@marcfehr/how-to-build-a-fast-and-reliable-community-mapping-tool-with-gatsbyjs-and-firebase-74a0fa6b5b83?source=userActivityShare-f57d26da4972-1584988662&_branch_match_id=689400773593121406'} target={'_blank'} rel={'noopener noreferrer'}>here</a>.
+  39 |         </div>
+> 40 |       </section>
+     |       ^
+  41 |     </Layout>
+  42 |   );
+  43 | };
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+File: src/pages/contact.js
+
+
+ ERROR #98123  WEBPACK
+
+Generating development JavaScript bundle failed
+
+/root/community-isolation-map/src/pages/contact.js: Expected corresponding JSX closing tag for <div> (40:6)
+
+  38 |           <i className={'icon external link'} />Read the Tutorial about how to set up your own map <a href={'https://medium.com/@marcfehr/how-to-build-a-fast-and-reliable-community-mapping-tool-with-gatsbyjs-and-firebase-74a0fa6b5b83?source=userActivityShare-f57d26da4972-1584988662&_branch_match_id=689400773593121406'} target={'_blank'} rel={'noopener noreferrer'}>here</a>.
+  39 |         </div>
+> 40 |       </section>
+     |       ^
+  41 |     </Layout>
+  42 |   );
+  43 | };
+
+File: src/pages/contact.js:40:6
+
+failed Re-building development bundle - 1.583s
+success extract queries from components - 0.257s
+warn ESLintError:
+/root/community-isolation-map/src/components/map-add/animatedmap/component.js
+  147:6  warning  React Hook useEffect has missing dependencies:
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/activationButton.js
+  19:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  19:9   warning  Static HTML elements with event handlers require a role
+                         jsx-a11y/no-static-element-interactions
+  26:11  warning  img elements must have an alt prop, either with meaningful text, or an empty
+string for decorative images  jsx-a11y/alt-text
+  31:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  31:9   warning  Static HTML elements with event handlers require a role
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/component.js
+  228:6  warning  React Hook useEffect has missing dependencies: 'MapPoints',
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/jsonToGeoJson.js
+  6:22  warning  Expected to return a value in arrow function  array-callback-return
+
+✖ 1 problem (0 errors, 1 warning)
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.add.js
+   83:6   warning  React Hook React.useEffect has missing dependencies: 'content',
+'data.site.siteMetadata.mapData.bounds', and 'map'. Either include them or remove the dependency
+array. You can also do a functional update 'setContent(c => ...)' if you only need 'content' in the
+'setContent' call  react-hooks/exhaustive-deps
+  108:6   warning  React Hook React.useEffect has a missing dependency: 'content'. Either include it
+ or remove the dependency array
+
+react-hooks/exhaustive-deps
+  195:17  warning  A form label must be associated with a control
+
+
+jsx-a11y/label-has-associated-control
+  196:17  warning  onBlur must be used instead of onchange, unless absolutely necessary and it
+causes no negative consequences for keyboard only or screen reader users
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.main.js
+  23:5  warning  React Hook useEffect has a missing dependency: 'map'. Either include it or remove
+the dependency array  react-hooks/exhaustive-deps
+
+✖ 1 problem (0 errors, 1 warning)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+success Re-building development bundle - 1.609s
+success open and validate gatsby-configs - 0.050s
+success load plugins - 0.225s
+success onPreInit - 0.019s
+success initialize cache - 0.019s
+success copy gatsby files - 0.078s
+success onPreBootstrap - 0.009s
+success createSchemaCustomization - 0.009s
+
+[Firebase Source] Fetching data for MapPoints...
+
+[Firebase Source] Data for MapPoints loaded in 1159 ms
+success source and transform nodes - 1.381s
+success building schema - 0.773s
+success createPages - 0.002s
+success createPagesStatefully - 0.175s
+success onPreExtractQueries - 0.003s
+success update schema - 0.087s
+success extract queries from components - 0.859s
+success write out requires - 0.052s
+success write out redirect data - 0.049s
+success onPostBootstrap - 0.003s
+⠀
+info bootstrap finished - 11.490 s
+⠀
+success run queries - 0.097s - 6/6 61.69/s
+⠀
+You can now view gatsby-bootcamp-blog in the browser.
+⠀
+  Local:            http://localhost:8000/
+  On Your Network:  http://10.0.0.114:8000/
+⠀
+View GraphiQL, an in-browser IDE, to explore your site's data and schema
+⠀
+  Local:            http://localhost:8000/___graphql
+  On Your Network:  http://10.0.0.114:8000/___graphql
+⠀
+Note that the development build is not optimized.
+To create a production build, use gatsby build
+⠀
+warn ESLintError:
+/root/community-isolation-map/src/components/map-add/animatedmap/component.js
+  147:6  warning  React Hook useEffect has missing dependencies:
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/activationButton.js
+  19:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  19:9   warning  Static HTML elements with event handlers require a role
+                         jsx-a11y/no-static-element-interactions
+  26:11  warning  img elements must have an alt prop, either with meaningful text, or an empty
+string for decorative images  jsx-a11y/alt-text
+  31:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  31:9   warning  Static HTML elements with event handlers require a role
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/component.js
+  228:6  warning  React Hook useEffect has missing dependencies: 'MapPoints',
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/jsonToGeoJson.js
+  6:22  warning  Expected to return a value in arrow function  array-callback-return
+
+✖ 1 problem (0 errors, 1 warning)
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.add.js
+   83:6   warning  React Hook React.useEffect has missing dependencies: 'content',
+'data.site.siteMetadata.mapData.bounds', and 'map'. Either include them or remove the dependency
+array. You can also do a functional update 'setContent(c => ...)' if you only need 'content' in the
+'setContent' call  react-hooks/exhaustive-deps
+  108:6   warning  React Hook React.useEffect has a missing dependency: 'content'. Either include it
+ or remove the dependency array
+
+react-hooks/exhaustive-deps
+  195:17  warning  A form label must be associated with a control
+
+
+jsx-a11y/label-has-associated-control
+  196:17  warning  onBlur must be used instead of onchange, unless absolutely necessary and it
+causes no negative consequences for keyboard only or screen reader users
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.main.js
+  23:5  warning  React Hook useEffect has a missing dependency: 'map'. Either include it or remove
+the dependency array  react-hooks/exhaustive-deps
+
+✖ 1 problem (0 errors, 1 warning)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+success Building development bundle - 24.816s
+success createPages - 0.042s
+success extract queries from components - 0.554s
+success write out requires - 0.008s
+success extract queries from components - 0.373s
+success rebuild schema - 1.327s
+warn ESLintError:
+/root/community-isolation-map/src/components/map-add/animatedmap/component.js
+  147:6  warning  React Hook useEffect has missing dependencies:
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/activationButton.js
+  19:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  19:9   warning  Static HTML elements with event handlers require a role
+                         jsx-a11y/no-static-element-interactions
+  26:11  warning  img elements must have an alt prop, either with meaningful text, or an empty
+string for decorative images  jsx-a11y/alt-text
+  31:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  31:9   warning  Static HTML elements with event handlers require a role
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/component.js
+  228:6  warning  React Hook useEffect has missing dependencies: 'MapPoints',
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/jsonToGeoJson.js
+  6:22  warning  Expected to return a value in arrow function  array-callback-return
+
+✖ 1 problem (0 errors, 1 warning)
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.add.js
+   83:6   warning  React Hook React.useEffect has missing dependencies: 'content',
+'data.site.siteMetadata.mapData.bounds', and 'map'. Either include them or remove the dependency
+array. You can also do a functional update 'setContent(c => ...)' if you only need 'content' in the
+'setContent' call  react-hooks/exhaustive-deps
+  108:6   warning  React Hook React.useEffect has a missing dependency: 'content'. Either include it
+ or remove the dependency array
+
+react-hooks/exhaustive-deps
+  195:17  warning  A form label must be associated with a control
+
+
+jsx-a11y/label-has-associated-control
+  196:17  warning  onBlur must be used instead of onchange, unless absolutely necessary and it
+causes no negative consequences for keyboard only or screen reader users
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.main.js
+  23:5  warning  React Hook useEffect has a missing dependency: 'map'. Either include it or remove
+the dependency array  react-hooks/exhaustive-deps
+
+✖ 1 problem (0 errors, 1 warning)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+success Re-building development bundle - 4.123s
+success createPages - 0.041s
+success extract queries from components - 0.327s
+success write out requires - 0.004s
+warn ESLintError:
+/root/community-isolation-map/src/components/header.js
+  23:9  warning  'shareText' is assigned a value but never used      no-unused-vars
+  24:9  warning  'shareHashtags' is assigned a value but never used  no-unused-vars
+
+✖ 2 problems (0 errors, 2 warnings)
+
+warn ESLintError:
+/root/community-isolation-map/src/components/map-add/animatedmap/component.js
+  147:6  warning  React Hook useEffect has missing dependencies:
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/activationButton.js
+  19:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  19:9   warning  Static HTML elements with event handlers require a role
+                         jsx-a11y/no-static-element-interactions
+  26:11  warning  img elements must have an alt prop, either with meaningful text, or an empty
+string for decorative images  jsx-a11y/alt-text
+  31:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  31:9   warning  Static HTML elements with event handlers require a role
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/component.js
+  228:6  warning  React Hook useEffect has missing dependencies: 'MapPoints',
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/jsonToGeoJson.js
+  6:22  warning  Expected to return a value in arrow function  array-callback-return
+
+✖ 1 problem (0 errors, 1 warning)
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.add.js
+   83:6   warning  React Hook React.useEffect has missing dependencies: 'content',
+'data.site.siteMetadata.mapData.bounds', and 'map'. Either include them or remove the dependency
+array. You can also do a functional update 'setContent(c => ...)' if you only need 'content' in the
+'setContent' call  react-hooks/exhaustive-deps
+  108:6   warning  React Hook React.useEffect has a missing dependency: 'content'. Either include it
+ or remove the dependency array
+
+react-hooks/exhaustive-deps
+  195:17  warning  A form label must be associated with a control
+
+
+jsx-a11y/label-has-associated-control
+  196:17  warning  onBlur must be used instead of onchange, unless absolutely necessary and it
+causes no negative consequences for keyboard only or screen reader users
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.main.js
+  23:5  warning  React Hook useEffect has a missing dependency: 'map'. Either include it or remove
+the dependency array  react-hooks/exhaustive-deps
+
+✖ 1 problem (0 errors, 1 warning)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+success Re-building development bundle - 3.765s
+success run queries - 0.914s - 1/1 1.09/s
+warn ESLintError:
+/root/community-isolation-map/src/components/header.js
+  23:9  warning  'shareText' is assigned a value but never used      no-unused-vars
+  24:9  warning  'shareHashtags' is assigned a value but never used  no-unused-vars
+
+✖ 2 problems (0 errors, 2 warnings)
+
+warn ESLintError:
+/root/community-isolation-map/src/components/map-add/animatedmap/component.js
+  147:6  warning  React Hook useEffect has missing dependencies:
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/activationButton.js
+  19:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  19:9   warning  Static HTML elements with event handlers require a role
+                         jsx-a11y/no-static-element-interactions
+  26:11  warning  img elements must have an alt prop, either with meaningful text, or an empty
+string for decorative images  jsx-a11y/alt-text
+  31:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  31:9   warning  Static HTML elements with event handlers require a role
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/component.js
+  228:6  warning  React Hook useEffect has missing dependencies: 'MapPoints',
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/jsonToGeoJson.js
+  6:22  warning  Expected to return a value in arrow function  array-callback-return
+
+✖ 1 problem (0 errors, 1 warning)
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.add.js
+   83:6   warning  React Hook React.useEffect has missing dependencies: 'content',
+'data.site.siteMetadata.mapData.bounds', and 'map'. Either include them or remove the dependency
+array. You can also do a functional update 'setContent(c => ...)' if you only need 'content' in the
+'setContent' call  react-hooks/exhaustive-deps
+  108:6   warning  React Hook React.useEffect has a missing dependency: 'content'. Either include it
+ or remove the dependency array
+
+react-hooks/exhaustive-deps
+  195:17  warning  A form label must be associated with a control
+
+
+jsx-a11y/label-has-associated-control
+  196:17  warning  onBlur must be used instead of onchange, unless absolutely necessary and it
+causes no negative consequences for keyboard only or screen reader users
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.main.js
+  23:5  warning  React Hook useEffect has a missing dependency: 'map'. Either include it or remove
+the dependency array  react-hooks/exhaustive-deps
+
+✖ 1 problem (0 errors, 1 warning)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+success Re-building development bundle - 0.362s
+success open and validate gatsby-configs - 0.052s
+success load plugins - 0.186s
+success onPreInit - 0.015s
+info One or more of your plugins have changed since the last time you ran Gatsby. As
+a precaution, we're deleting your site's cache to ensure there's no stale data.
+success initialize cache - 0.046s
+success copy gatsby files - 0.108s
+success onPreBootstrap - 0.014s
+success createSchemaCustomization - 0.013s
+
+[Firebase Source] Fetching data for MapPoints...
+
+[Firebase Source] Data for MapPoints loaded in 1279 ms
+success source and transform nodes - 1.582s
+success building schema - 0.932s
+success createPages - 0.004s
+success createPagesStatefully - 0.306s
+success onPreExtractQueries - 0.005s
+success update schema - 0.141s
+success extract queries from components - 1.153s
+success write out requires - 0.044s
+success write out redirect data - 0.029s
+success onPostBootstrap - 0.003s
+⠀
+info bootstrap finished - 12.193 s
+⠀
+success run queries - 0.109s - 14/14 128.36/s
+⠀
+You can now view gatsby-bootcamp-blog in the browser.
+⠀
+  Local:            http://localhost:8000/
+  On Your Network:  http://10.0.0.114:8000/
+⠀
+View GraphiQL, an in-browser IDE, to explore your site's data and schema
+⠀
+  Local:            http://localhost:8000/___graphql
+  On Your Network:  http://10.0.0.114:8000/___graphql
+⠀
+Note that the development build is not optimized.
+To create a production build, use gatsby build
+⠀
+warn ESLintError:
+/root/community-isolation-map/src/components/header.js
+  23:9  warning  'shareText' is assigned a value but never used      no-unused-vars
+  24:9  warning  'shareHashtags' is assigned a value but never used  no-unused-vars
+
+✖ 2 problems (0 errors, 2 warnings)
+
+warn ESLintError:
+/root/community-isolation-map/src/components/map-add/animatedmap/component.js
+  147:6  warning  React Hook useEffect has missing dependencies:
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/activationButton.js
+  19:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  19:9   warning  Static HTML elements with event handlers require a role
+                         jsx-a11y/no-static-element-interactions
+  26:11  warning  img elements must have an alt prop, either with meaningful text, or an empty
+string for decorative images  jsx-a11y/alt-text
+  31:9   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener             jsx-a11y/click-events-have-key-events
+  31:9   warning  Static HTML elements with event handlers require a role
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/component.js
+  228:6  warning  React Hook useEffect has missing dependencies: 'MapPoints',
+'data.site.siteMetadata.mapData.bounds', 'props', and 'setInteractivity'. Either include them or
+remove the dependency array. However, 'props' will change when *any* prop changes, so the preferred
+fix is to destructure the 'props' object outside of the useEffect call and refer to those specific
+props inside useEffect  react-hooks/exhaustive-deps
+warn ESLintError:
+/root/community-isolation-map/src/components/map-viewer/animatedmap/jsonToGeoJson.js
+  6:22  warning  Expected to return a value in arrow function  array-callback-return
+
+✖ 1 problem (0 errors, 1 warning)
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.add.js
+   83:6   warning  React Hook React.useEffect has missing dependencies: 'content',
+'data.site.siteMetadata.mapData.bounds', and 'map'. Either include them or remove the dependency
+array. You can also do a functional update 'setContent(c => ...)' if you only need 'content' in the
+'setContent' call  react-hooks/exhaustive-deps
+  108:6   warning  React Hook React.useEffect has a missing dependency: 'content'. Either include it
+ or remove the dependency array
+
+react-hooks/exhaustive-deps
+  195:17  warning  A form label must be associated with a control
+
+
+jsx-a11y/label-has-associated-control
+  196:17  warning  onBlur must be used instead of onchange, unless absolutely necessary and it
+causes no negative consequences for keyboard only or screen reader users
+
+warn ESLintError:
+/root/community-isolation-map/src/components/mapview.main.js
+  23:5  warning  React Hook useEffect has a missing dependency: 'map'. Either include it or remove
+the dependency array  react-hooks/exhaustive-deps
+
+✖ 1 problem (0 errors, 1 warning)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+success Building development bundle - 21.791s
