@@ -6,6 +6,7 @@ deploy_production:
     - eval $(ssh-agent -s)
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
     - 'echo -e "Host hopfenspace_sshgateway \n\tUser gateway \n\tHostName hopfenspace.org\n\tCheckHostIP no\nHost pafliefert\n\tHostName 10.0.0.114\n\tUser root\n\tProxyJump hopfenspace_sshgateway" > ~/.ssh/config'
+    - echo $STAGING_PRIVATE_KEY
     - ssh-add <(echo "$STAGING_PRIVATE_KEY")
   script:
     - ssh pafliefert "cd community-isolation-map && git pull"
