@@ -27,7 +27,7 @@ const Index = () => {
           <div className='ui container'>
             <h1 className='ui header'>
               <div className='content'>
-                <span className={'page-title'}>Pfaffenhofen liefert: Diese Geschäfte haben virtuell geöffnet.</span>
+                <img src="/static/teaser.jpg" alt="Logo" />
                 <div className='sub header'>
                   Viele kleine Läden und Dienstleister verwandeln sich in der Corona-Krise in Heimlieferdienste. Wir zeigen Ihnen, welche. Ist Ihr Geschäft nicht drauf?.{' '}
                   <Link to={'/add'}>
