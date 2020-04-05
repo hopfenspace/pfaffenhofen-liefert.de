@@ -29,7 +29,7 @@ const Index = () => {
           <div className='ui container'>
             <h1 className='ui header'>
               <div className='content'>
-                <img src={logo} style="width: 100%;" alt="Logo" />
+                <img src={logo} className="logo-header" alt="Logo" />
                 <div className='sub header'>
                   Viele kleine Läden und Dienstleister verwandeln sich in der Corona-Krise in Heimlieferdienste. Wir zeigen Ihnen, welche. Ist Ihr Geschäft nicht drauf?.{' '}
                   <Link to={'/add'}>

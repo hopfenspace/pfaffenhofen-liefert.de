@@ -8,6 +8,10 @@ html {
   // The ID "app" is part of the HTML template, and is the entry point where
   // the React components are being injected into.
 
+  .logo-header {
+    width: 100%;
+  }
+
   .ui.image.header {
     margin-top: 1rem;
   }
