@@ -130,8 +130,7 @@ function AnimatedMap(props) {
     map.deactivateMap()
 
     const interactionControl = new InteractionToggle(map, [
-      'Activate map',
-      'Activate scrolling'
+      'Karte aktivieren', 'Scrollen aktivieren'
     ])
     map.addControl(interactionControl, 'top-right')
 
@@ -235,7 +234,7 @@ function AnimatedMap(props) {
             activate={() => mapObject.activateMap()}
             deactivate={() => mapObject.deactivateMap()}
             initialState={null}
-            buttonText={['Activate map', 'Activate scrolling']}
+            buttonText={['Karte aktivieren', 'Scrollen aktivieren']}
             icons={['moving.svg', 'scrolling.svg']}
           />
         </div>

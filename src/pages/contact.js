@@ -36,7 +36,7 @@ const Contact = () => {
           Email: liefert@pfaffenhofen.de<br />
           Telefon: 08441 4980299<br />
           <div className={'ui yellow message'} style={{fontWeight: 500, fontStyle: 'italic'}}>
-            <i className={'icon external link'} />Read the Tutorial about how to set up your own map <a href={'https://medium.com/@marcfehr/how-to-build-a-fast-and-reliable-community-mapping-tool-with-gatsbyjs-and-firebase-74a0fa6b5b83?source=userActivityShare-f57d26da4972-1584988662&_branch_match_id=689400773593121406'} target={'_blank'} rel={'noopener noreferrer'}>here</a>.
+            <i className={'icon external link'} />Anleitung zum aufsetzten einer eigenen Instanz dieser Karte (z.B. für ihren Landkreis) <a href={'https://medium.com/@marcfehr/how-to-build-a-fast-and-reliable-community-mapping-tool-with-gatsbyjs-and-firebase-74a0fa6b5b83?source=userActivityShare-f57d26da4972-1584988662&_branch_match_id=689400773593121406'} target={'_blank'} rel={'noopener noreferrer'}>Hier (Englisch)</a>.
           </div>
         </div>
       </section>
