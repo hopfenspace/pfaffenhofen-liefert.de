@@ -4,19 +4,15 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    author: 'Marc Fehr',
-    title: 'Community Isolation Map',
+    author: 'Bürgernetz Landkreis Pfaffenhofen e.V.',
+    title: 'pfaffenhofen-liefert.de',
     description:
-      'This is the open source project for building your own community map.',
-    email: 'mail@xyz.com',
+      'Karte mit Geschäften im Landkreis Pfaffenhofen die während der COVID-19 Krise noch geöffnet haben',
+    email: 'liefert@pfaffenhofen.de',
     teaserImage: "https://www.whozinberg.org/teaser.jpg",
-    twitter: {
-      hashtag: 'yourHashtag',
-      handle: 'yourTwitterHandle'
-    },
     share: {
-      text: 'This is the share text, follow @xyz and #abc',
-      hashtags: 'WhosInBerg,Coronavirus,StayTheFuckHome' // separate with commas,
+      text: 'pfaffenhofen-liefert.de',
+      hashtags: 'pfaffenhofen,Coronavirus,StayHome' // separate with commas,
     },
     menuLinks: [
       {title: 'Home', link: '/', icon: 'map'},
