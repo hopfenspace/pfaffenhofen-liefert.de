@@ -133,23 +133,23 @@ export function MapAddComponent() {
         <AnimatedMap getMapObject={m => setMap(m)} enabled={mapActive} />
         {!mapActive && (
           <div id='overlay' className='box'>
-            <h3>Add new information</h3>
+            <h3>Eintrag anlegen</h3>
             <p>
-              Choose a position on the map within the community boundaries to become part of Who'zinberg.
+            Wählen Sie auf dieser Karte den Ort Ihres Geschäftes aus. Sie können dazu die Karte vergrössern. Um einen Ort zu wählen, klicken Sie auf die Karte.
             </p>
             <button
               className='ui primary button'
               onClick={() => setMapActive(true)}
             >
-              Activate map and add service
+              Karte laden und Eintrag anlegen.
             </button>
           </div>
         )}
 
         {content.position.length > 0 && (
           <div id='selectThisPoint' className='box'>
-            <h3>You set a position</h3>
-            <p>Do you want to use it?</p>
+            <h3>Diese Position wählen?</h3>
+            <p>Wollen Sie dies als Ihre Position festlegen?</p>
             <div className='ui buttons'>
               <button
                 className='ui button'
@@ -157,13 +157,13 @@ export function MapAddComponent() {
                   setContent({ ...content, position: [] })
                 }}
               >
-                No, choose again...
+                Nein, neu wählen
               </button>
               <button
                 className='ui positive button'
                 onClick={() => setPositionSelected(true)}
               >
-                Yes!
+                Ja, eintragen!
               </button>
             </div>
           </div>
@@ -181,18 +181,18 @@ export function MapAddComponent() {
               }}
             >
               <i className='left arrow icon' />
-              Change location
+              Ort ändern
             </button>
             <div className='ui form'>
               <h4 className='ui horizontal divider header'>
-                About your service (public)
+                Über den Eintrag
               </h4>
               <p>
-                Please answer the following questions. This data will be displayed on the map. At the moment, it's only possible to choose <strong>one category</strong> per point. If you have more than one information, you'll have to add every single one to the map.
+                Bitte beantworten sie die folgenden Fragen.
               </p>
 
               <div className='field'>
-                <label>Service category</label>
+                <label>Kategorie</label>
                 <select
                   value={content.category}
                   className='ui dropdown'
@@ -215,84 +215,84 @@ export function MapAddComponent() {
               </div>
 
               <div className='field required'>
-                <label>Title of your information</label>
+                <label>Titel</label>
                 <input
                   type='text'
                   name='title'
                   value={content.title}
                   onChange={onChange}
-                  placeholder='Help with shopping / Have hand sanitiser / what else?'
+                  placeholder='Pizza Lieferservice / Einkaufs Hilfe / ...?'
                 />
               </div>
 
               <div className='field required'>
-                <label>That's what you offer</label>
+                <label>Beschreibung</label>
                 <textarea
                   rows={4}
                   name='description'
                   onChange={onChange}
-                  placeholder='Write a short text that describes your service or information.'
+                  placeholder='Kurzer Text der das Angebot beschreibt.'
                   defaultValue={content.description}
                 />
               </div>
 
               <div className='field required'>
-                <label>How to get in touch</label>
+                <label>Kontakt Informationen</label>
                 <textarea
                   rows={4}
                   name='contact'
-                  placeholder='This is what people will see. Example: Whatsapp: 012 234 23 23, Email: xyz@abc.co.za'
+                  placeholder='Öffentlich Lesbare Kontaktinformationen. Zum Beispiel: Telefon: 08441 123456, Email: meinLaden@pfaffenhofen.de'
                   defaultValue={content.contact}
                   onChange={onChange}
                 />
               </div>
 
               <div className='field required'>
-                <label>Your physical (postal) address</label>
+                <label>Adresse</label>
                 <textarea
                   rows={4}
                   name='address'
-                  placeholder='123 Main road, Muizenberg. We need this to confirm your locaction on the map.'
+                  placeholder='Wird nur zur internen Verifizierung verwendet. Sollte mit dem gewählten Ort auf der Karte übereinstimmen'
                   defaultValue={content.address}
                   onChange={onChange}
                 />
               </div>
 
               <h4 className='ui horizontal divider header'>
-                Additional information
+                Weitere Informationen
               </h4>
               <p>
-                This information will not be published to the website.
+                Diese Informationen werden nicht auf der Webseite veröffentlicht.
               </p>
 
               <div className='field required'>
-                <label>Your name</label>
+                <label>Ihr Name</label>
                 <input
                   type='text'
                   name='name'
-                  placeholder='James Smith'
+                  placeholder='Max Mustermann'
                   defaultValue={content.name}
                   onChange={onChange}
                 />
               </div>
 
               <div className='field required'>
-                <label>Your email address</label>
+                <label>Ihre E-Mail Adresse</label>
                 <input
                   type='text'
                   name='email'
-                  placeholder='james@smith.com'
+                  placeholder='max.mustermann@pfaffenhofen.de'
                   defaultValue={content.email}
                   onChange={onChange}
                 />
               </div>
 
               <div className='field'>
-                <label>Phone number (not mandatory)</label>
+                <label>Telefonnummer (optional)</label>
                 <input
                   type='text'
                   name='phone'
-                  placeholder='079...'
+                  placeholder='08441 ...'
                   defaultValue={content.phone}
                   onChange={onChange}
                 />
@@ -300,16 +300,16 @@ export function MapAddComponent() {
 
               {showError && (
                 <div className='ui negative message'>
-                  <div className='header'>Missing data</div>
+                  <div className='header'>Fehlende Angaben</div>
                   <p>
-                    Please fill in all the required details.
+                    Bitte füllen sie alle Pflichtfelder aus.
                   </p>
                 </div>
               )}
 
               <div className='ui buttons'>
                 <button className='ui positive button' onClick={validateForm}>
-                  Send form
+                  Absenden
                 </button>
               </div>
             </div>
@@ -322,10 +322,10 @@ export function MapAddComponent() {
             <div className='ui success message'>
               <div className='header'>Thanks!</div>
               <p>
-                Your data has been successfully transmitted and will soon be visible on{' '}
+                Ihre Daten wurden Erfolgreich übermittelt und werden auf der Seite veröffentlicht:{' '}
                 <Link to='/'>{' '}{data.site.siteMetadata.title}
                 </Link>{' '}
-                as soon as it was approved by the administrators.
+                Sobald die Redaktion den Eintrag freigeschaltet hat.
               </p>
             </div>
           </div>
@@ -334,30 +334,18 @@ export function MapAddComponent() {
 
       <div className='ui vertical segment'>
         <div className='ui text container formcontainer'>
-          <h2>What's happening to my data?</h2>
-          Who'zinberg administrators will check your entry and add it to the interactive map once they gave their approval. This does usually take <strong>less than 24 hours</strong>.<br />
-          <h2>Which kind of entries will be approved?</h2>
-          Everyone can become part of the Who'zinberg community. Whether you're offering to read books to children via Skype, want to deliver a few slices of your delicious sour dough bread every Wednesday, or simply start a new take-away service for your products – this is your place. There will soon be an option for <strong>location-free services</strong>, too.
-          <h2>How can I remove my data?</h2>
-          If you <strong>want to be deleted</strong> from the Who'zinberg map, drop me an email to{' '}
+          <h2>Was passiert mit meinen Daten?</h2>
+          Das Bürgernetz wird Ihre Daten auf einer Karte darstellen. Dadurch sieht man in welchen Geschäften man  im Landkreis Pfaffenhofen trotz geschlossener Türen noch virtuell einkaufen kann.<br />
+          <h2>Wer kann sich eintragen?</h2>
+          Es können sich alle eintragen: vom Pizzaservice, über den Weinhändler, den Bastelladen und viele mehr. Das Bürgernetz behält sich vor, Einträge nicht zu veröffentlichen.
+          <h2>Kann ich mich wieder löschen lassen?</h2>
+          Das Bürgernetz gibt die erfassten Daten weder intern noch extern an Dritte weiter. Die Daten werden nur für diese Website und diese Karte verwendet. Falls die Redaktion Ihren Eintrag löschen soll, schreiben Sie eine E-Mail an{' '}
           <a
-            href='mailto:mail@whozinberg.org'
+            href='mailto:liefert@pfaffenhofen.de'
           >
-            mail@wwhozinberg.org
+            liefert@pfaffenhofen.de
           </a>
-          <h2>Anything we can improve?</h2>
-          This tool is supposed to be used, why we're constantly looking for constructive feedback. If you have anything that you think would make this all better, please let me know via <a
-          href='mailto:mail@whozinberg.org'
-        >
-          email
-        </a>{' '}.
-          <h2>Why only Muizenberg?</h2>
-          Because at the moment, we all need to keep our lifes as local and isolated as possible. If you want this service to be available in your area,{' '}
-          <a
-          href='mailto:mail@whozinberg.org'
-        >
-            contact us via email
-        </a>{' '}and we'll talk about it. This complete project will soon be available as an <strong>open source repository</strong> on Github.
+          Andernfalls werden Ihre Daten gelöscht, sobald diese Karte nicht mehr benötigt wird.
         </div>
       </div>
     </div>
