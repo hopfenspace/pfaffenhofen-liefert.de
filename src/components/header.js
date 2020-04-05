@@ -1,5 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
+import logo from '../../static/favicon.png';
 
 /* Additional Header Styles */
 import './header.scss';
@@ -19,7 +20,6 @@ const Header = () => {
     }
   `);
 
-  const logo = require('../../static/favicon.png');
   const shareText = encodeURI(data.site.siteMetadata.share.text);
   const shareHashtags = encodeURI(data.site.siteMetadata.share.hashtags);
 
