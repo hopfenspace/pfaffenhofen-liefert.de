@@ -19,7 +19,7 @@ const Header = () => {
     }
   `);
 
-  const logo = require('../images/logo.svg');
+  const logo = require('../../static/favicon.png');
   const shareText = encodeURI(data.site.siteMetadata.share.text);
   const shareHashtags = encodeURI(data.site.siteMetadata.share.hashtags);
 
