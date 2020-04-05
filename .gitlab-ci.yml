@@ -10,6 +10,6 @@ deploy_production:
     - echo "$STAGING_PRIVATE_KEY" > ~/.ssh/id_rsa
     - chmod 600 ~/.ssh/id_rsa
   script:
-    - ssh pafliefert "cd community-isolation-map && git pull"
+    - ssh pafliefert "cd community-isolation-map && git pull && gatsby build"
   only:
     - master
