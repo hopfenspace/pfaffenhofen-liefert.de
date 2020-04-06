@@ -15,7 +15,7 @@ module.exports = {
       hashtags: 'pfaffenhofen,Coronavirus,StayHome' // separate with commas,
     },
     menuLinks: [
-      {title: 'Karte', link: '/', icon: 'map'},
+      {title: 'Start', link: '/', icon: 'map'},
       {title: 'Hinzufügen', link: '/add', icon: 'plus'},
       {title: 'Impressum', link: '/contact', icon: 'info'},
     ],

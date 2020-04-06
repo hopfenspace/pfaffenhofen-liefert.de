@@ -25,25 +25,23 @@ const Header = () => {
 
   return (
     <header>
-      <Link className={'ui small basic black icon button'} to={'/'}>
-        <div className={'ui unstackable grid'}>
-          <div className={'ui twelve wide column logo-column'}>
-            <div
-              className={'header-logo'}
-              style={{
-                backgroundImage: 'url('+ logo +')'
-              }}
-            />
-            <h1 className={'logo-font'}>
-              <span>{data.site.siteMetadata.title}</span>
-            </h1>
-          </div>
-          <div className={'ui four wide right aligned column'} style={{padding: '.8rem 1.4rem 0 0'}}>
-            <div className={'icon-container'}>
-            </div>
+      <div className={'ui unstackable grid'}>
+        <div className={'ui twelve wide column logo-column'}>
+          <div
+            className={'header-logo'}
+            style={{
+              backgroundImage: 'url('+ logo +')'
+            }}
+          />
+          <h1 className={'logo-font'}>
+            <span>{data.site.siteMetadata.title}</span>
+          </h1>
+        </div>
+        <div className={'ui four wide right aligned column'} style={{padding: '.8rem 1.4rem 0 0'}}>
+          <div className={'icon-container'}>
           </div>
         </div>
-      </Link>
+      </div>
     </header>
   );
 };
