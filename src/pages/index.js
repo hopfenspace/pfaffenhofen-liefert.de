@@ -31,7 +31,7 @@ const Index = () => {
               <div className='content'>
                 <img src={logo} className="logo-header" alt="Logo" />
                 <div className='sub header'>
-                  Viele kleine Läden und Dienstleister verwandeln sich in der Corona-Krise in Heimlieferdienste. Wir zeigen Ihnen, welche. Ist Ihr Geschäft nicht drauf?.{' '}
+                  Viele kleine Läden und Dienstleister verwandeln sich in der Corona-Krise in Heimlieferdienste oder bieten To-Go an. Wir zeigen Ihnen, welche. Ist Ihr Geschäft nicht drauf?.{' '}
                   <Link to={'/add'}>
                     Helfen sie mit!
                   </Link>
