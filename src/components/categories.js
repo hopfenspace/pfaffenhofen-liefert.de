@@ -5,6 +5,7 @@ module.exports = [
 	{ ident: 'creative', text: 'Kreativ', color: '#40e0d0' },
 	{ ident: 'books', text: 'Bücher', color: '#30336b' },
 	{ ident: 'children', text: 'Kindersachen', color: '#8e44ad' },
+	{ ident: 'pets', text: 'Tierbedarf', color: '#5e2e00' },
 	{ ident: 'flowers', text: 'Blumen & Garten', color: '#2980b9' },
 	{ ident: 'craftsman', text: 'Handwerk', color: '#d35400' },
 	{ ident: 'vehicles', text: 'Rad & Auto', color: '#335455' },

@@ -22,8 +22,8 @@
   }
 
   // Change all category colours here for the button and circle styling
-  $categories: all childcare food takeaway medical shop information safespace petcare other;
-  $cat_colors: black #1289A7 #D980FA #30336b #d35400 #8e44ad #2980b9 #7f8c8d #e1b12c #222f3e;
+  $categories all catering food clothing creative books children pets flowers craftsman vehicles help other;
+  $cat_colors: black #1289A7 #7f8c8d #D980FA #40e0d0 #30336b #8e44ad #5e2e00 #2980b9 #d35400 #335455 #e1b12c #222f3e;
 
   @each $cat in $categories {
     $i: index($categories, $cat);
