@@ -9,7 +9,12 @@ html {
   // the React components are being injected into.
 
   .logo-header {
-    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 700px;
+    max-width: 100%;
   }
 
   .ui.image.header {
