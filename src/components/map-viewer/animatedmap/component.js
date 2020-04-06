@@ -210,6 +210,7 @@ function AnimatedMap(props) {
             .setDOMContent(placeholder)
             .setLngLat(e.lngLat)
             .addTo(map)
+          map.popup.getElement().style['max-width'] = '';
         }
       })
 
