@@ -6,8 +6,20 @@ import { MapViewComponent } from '../components/mapview.main';
 /* SEO Component with React Helmet */
 import Head from '../components/head';
 import logo from '../../static/teaser.jpg';
+import categories from '../components/categories';
+import {urlify, ln2br} from '../components/text-utils';
 
 import './tablestyle.scss';
+
+const get_category_text = ident => {
+
+  const result = categories.find(x => x.ident === ident);
+  if(result)
+    return result.text;
+  else
+    return ident;
+
+};
 
 const Index = () => {
   const data = useStaticQuery(graphql`
@@ -96,15 +108,15 @@ const Index = () => {
               <tr>
                 <th>Name</th>
                 <th>Kategorie</th>
-                <th>Beschreibung</th>
-                <th>Info</th>
+                <th>Kontakt</th>
+                <th>Adresse</th>
               </tr>
               {data.allMapPoints.nodes.map((item, i) => (
                 <tr key={item.timestamp}>
                   <td>{item.title}</td>
-                  <td>{item.category}</td>
-                  <td>{item.description}</td>
-                  <td>{item.contact}</td>
+                  <td>{get_category_text(item.category)}</td>
+                  <td>{urlify(item.contact)}</td>
+                  <td>{ln2br(item.address)}</td>
                 </tr>
               ))}
             </table>
