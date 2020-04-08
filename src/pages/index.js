@@ -93,7 +93,7 @@ const Index = () => {
                 <tr key={item.timestamp}>
                   <td>{item.title}</td>
                   <td>{get_category_text(item.category)}</td>
-                  <td><span dangerouslySetInnerHTML={urlify(item.contact)} /></td>
+                  <td><span dangerouslySetInnerHTML={{ __html: urlify(item.contact) }} /></td>
                   <td>{ln2br(item.address)}</td>
                 </tr>
               ))}
