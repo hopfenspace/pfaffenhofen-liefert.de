@@ -77,7 +77,7 @@ const Index = () => {
         <section className="ui vertical segment intro">
           <div
             className="ui text container formcontainer"
-            style={{ 'max-width': '1000px' }}
+            style={{ 'max-width': '1111px !important' }}
           >
             <h2>Alle Teilnehmenden Geschäfte als Liste</h2>
             <p></p>
@@ -87,14 +87,12 @@ const Index = () => {
                 <th>Name</th>
                 <th>Kategorie</th>
                 <th>Kontakt</th>
-                <th>Adresse</th>
               </tr>
               {data.allMapPoints.nodes.map((item, i) => (
                 <tr key={item.timestamp}>
                   <td>{item.title}</td>
                   <td>{get_category_text(item.category)}</td>
                   <td><span dangerouslySetInnerHTML={{ __html: urlify(item.contact) }} /></td>
-                  <td>{ln2br(item.address)}</td>
                 </tr>
               ))}
             </table>
