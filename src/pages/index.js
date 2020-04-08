@@ -49,28 +49,6 @@ const Index = () => {
     }
   `);
 
-  console.log(data);
-
-  /* const entries = useStaticQuery(graphql`
-    query {
-      allMapPoints(filter: { approved: { eq: true } }) {
-        nodes {
-          approved
-          address
-          category
-          contact
-          description
-          email
-          id
-          name
-          phone
-          position
-          title
-        }
-      }
-    }
-  `); */
-
   return (
     <Layout>
       <Head title={data.site.siteMetadata.title} />
@@ -115,7 +93,7 @@ const Index = () => {
                 <tr key={item.timestamp}>
                   <td>{item.title}</td>
                   <td>{get_category_text(item.category)}</td>
-                  <td>{urlify(item.contact)}</td>
+                  <td><span dangerouslySetInnerHTML={urlify(item.contact)} /></td>
                   <td>{ln2br(item.address)}</td>
                 </tr>
               ))}

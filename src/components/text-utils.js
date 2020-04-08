@@ -1,4 +1,6 @@
-exports.urlify = function urlify(inputText) {
+import React from 'react'
+
+export function urlify(inputText) {
   let replacedText
 
   // URLs starting with http://, https://, or ftp://
@@ -27,7 +29,7 @@ exports.urlify = function urlify(inputText) {
   return replacedText
 };
 
-exports.ln2br = text => {
+export function ln2br(text) {
   return (
     <span dangerouslySetInnerHTML={{ __html: text.replace(/\n/g, '<br />') }} />
   )
