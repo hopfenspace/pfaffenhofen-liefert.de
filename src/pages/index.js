@@ -79,7 +79,7 @@ const Index = () => {
             className="ui text container formcontainer"
             style={{ 'max-width': '1111px !important' }}
           >
-            <h2>Alle Teilnehmenden Geschäfte als Liste</h2>
+            <h2>Alle Geschäfte als Liste</h2>
             <p></p>
 
             <table>
