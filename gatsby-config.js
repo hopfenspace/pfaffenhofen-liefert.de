@@ -9,7 +9,7 @@ module.exports = {
     description:
       'Karte mit Geschäften im Landkreis Pfaffenhofen die während der COVID-19 Krise noch geöffnet haben',
     email: 'liefert@pfaffenhofen.de',
-    teaserImage: "https://www.whozinberg.org/teaser.jpg",
+    teaserImage: "https://pfaffenhofen-liefert.de/preview.png",
     share: {
       text: 'pfaffenhofen-liefert.de',
       hashtags: 'pfaffenhofen,Coronavirus,StayHome' // separate with commas,
