@@ -49,6 +49,8 @@ const Index = () => {
     }
   `);
 
+  data.allMapPoints.nodes.sort((a, b) => a.category.localeCompare(b.category));
+
   return (
     <Layout>
       <Head title={data.site.siteMetadata.title} />
