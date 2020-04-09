@@ -1,6 +1,8 @@
 import React from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import logo from '../../static/favicon.png';
+import bnvLogo from '../../static/buergernetz.svg';
+import hsLogo from '../../static/hopfenspace.svg';
 
 /* Additional Header Styles */
 import './header.scss';
@@ -10,18 +12,11 @@ const Header = () => {
     query {
       site {
         siteMetadata {
-          title,
-          share {
-            text,
-            hashtags
-          }
+          title
         }
       }
     }
   `);
-
-  const shareText = encodeURI(data.site.siteMetadata.share.text);
-  const shareHashtags = encodeURI(data.site.siteMetadata.share.hashtags);
 
   return (
     <header>
@@ -39,6 +34,8 @@ const Header = () => {
         </div>
         <div className={'ui four wide right aligned column'} style={{padding: '.8rem 1.4rem 0 0'}}>
           <div className={'icon-container'}>
+            <a href={'https://bn-paf.de'}><img height={'50'} src={bnvLogo} /></a>
+            <a href={'https://hopfenspace.org'}><img height={'50'} src={hsLogo} /></a>
           </div>
         </div>
       </div>
