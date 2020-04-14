@@ -15,7 +15,9 @@ const get_category_text = ident => {
 
 };
 
-export function TableView(props) {
+const includes = (haystack, needle) => haystack.toLowerCase().includes(needle.toLowerCase());
+
+export default function TableView(props) {
 	const data = useStaticQuery(graphql`
 	query {
 		allMapPoints(filter: { approved: { eq: true } }) {
@@ -36,8 +38,13 @@ export function TableView(props) {
 	}
 	`);
 
-	const entries = data.allMapPoints.nodes
-		.filter(x => props.categories.length === 0 || props.categories.indexOf(x.category) !== -1);
+	let entries = data.allMapPoints.nodes;
+
+	if(props.categories.length !== 0)
+		entries = entries.filter(x => props.categories.indexOf(x.category) !== -1);
+
+	if(props.search)
+		entries = entries.filter(x => includes(x.name, props.search) || includes(x.description, props.search));
 
 	entries.sort((a, b) => a.category.localeCompare(b.category));
 

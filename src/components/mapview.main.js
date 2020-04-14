@@ -7,6 +7,7 @@ import TableView from "./tableview";
 export function MapViewComponent() {
 	const [map, setMap] = useState(null)
 	const [selectedCategories, setSelectedCategories] = useState([])
+	const [entrySearch, setEntrySearch] = useState('')
 
 	useEffect(() => {
 		if (map) {
@@ -49,7 +50,17 @@ export function MapViewComponent() {
 			<div className='ui container'>
 				<div className='mapform'>
 					<h2>Alle Geschäfte als Liste</h2>
-					<TableView categories={selectedCategories} />
+					<div className='field'>
+						<label>Suche</label>
+						<input
+							type='text'
+							placeholder='Suche...'
+							oninput={e => {
+								setEntrySearch(e.target.value);
+							}}
+						/>
+					</div>
+					<TableView categories={selectedCategories} search={entrySearch} />
 				</div>
 			</div>
 		</div>
