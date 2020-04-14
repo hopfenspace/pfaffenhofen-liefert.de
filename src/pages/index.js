@@ -6,7 +6,6 @@ import { MapViewComponent } from '../components/mapview.main';
 /* SEO Component with React Helmet */
 import Head from '../components/head';
 import logo from '../../static/teaser.jpg';
-import categories from '../components/categories';
 
 const Index = () => {
   const data = useStaticQuery(graphql`

@@ -1,6 +1,7 @@
 import React from "react";
 import { urlify } from './text-utils';
 import { useStaticQuery, graphql } from 'gatsby';
+import categories from '../components/categories';
 
 import './tableview.scss';
 
