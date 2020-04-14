@@ -44,7 +44,10 @@ export default function TableView(props) {
 		entries = entries.filter(x => props.categories.indexOf(x.category) !== -1);
 
 	if(props.search)
-		entries = entries.filter(x => includes(x.name, props.search) || includes(x.description, props.search));
+		entries = entries.filter(x => includes(x.name, props.search)
+			|| includes(x.title, props.search)
+			|| includes(get_category_text(x.category), props.search)
+			|| includes(x.description, props.search));
 
 	entries.sort((a, b) => a.category.localeCompare(b.category));
 
