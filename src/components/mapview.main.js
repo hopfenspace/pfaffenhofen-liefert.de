@@ -50,16 +50,16 @@ export function MapViewComponent() {
 			<div className='ui container'>
 				<div className='mapform'>
 					<h2>Alle Geschäfte als Liste</h2>
-					<div className='field'>
-						<label>Suche</label>
+					<div className='ui form field'>
 						<input
 							type='text'
 							placeholder='Suche...'
-							oninput={e => {
+							onInput={e => {
 								setEntrySearch(e.target.value);
 							}}
 						/>
 					</div>
+					<br />
 					<TableView categories={selectedCategories} search={entrySearch} />
 				</div>
 			</div>
