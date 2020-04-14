@@ -1,5 +1,18 @@
 import React from "react";
-import {urlify} from './text-utils';
+import { urlify } from './text-utils';
+import { useStaticQuery, graphql } from 'gatsby';
+
+import './tableview.scss';
+
+const get_category_text = ident => {
+
+	const result = categories.find(x => x.ident === ident);
+	if(result)
+	  return result.text;
+	else
+	  return ident;
+
+};
 
 export function TableView(props) {
 	const data = useStaticQuery(graphql`

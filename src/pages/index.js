@@ -8,18 +8,6 @@ import Head from '../components/head';
 import logo from '../../static/teaser.jpg';
 import categories from '../components/categories';
 
-import './tablestyle.scss';
-
-const get_category_text = ident => {
-
-  const result = categories.find(x => x.ident === ident);
-  if(result)
-    return result.text;
-  else
-    return ident;
-
-};
-
 const Index = () => {
   const data = useStaticQuery(graphql`
   query {
