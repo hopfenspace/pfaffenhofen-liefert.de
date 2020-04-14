@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import Categories from "./map-viewer/categorybuttons";
 import AnimatedMap from "./map-viewer/animatedmap/component";
+import TableView from "./tableview";
 
 export function MapViewComponent() {
 	const [map, setMap] = useState(null)
@@ -44,6 +45,12 @@ export function MapViewComponent() {
 			</div>
 			<div id='map-container'>
 				<AnimatedMap getMapObject={m => setMap(m)} />
+			</div>
+			<div className='ui container'>
+				<div className='mapform'>
+					<h2>Alle Geschäfte als Liste</h2>
+					<TableView categories={selectedCategories} />
+				</div>
 			</div>
 		</div>
 	)

@@ -7,7 +7,6 @@ import { MapViewComponent } from '../components/mapview.main';
 import Head from '../components/head';
 import logo from '../../static/teaser.jpg';
 import categories from '../components/categories';
-import {urlify, ln2br} from '../components/text-utils';
 
 import './tablestyle.scss';
 
@@ -23,33 +22,16 @@ const get_category_text = ident => {
 
 const Index = () => {
   const data = useStaticQuery(graphql`
-    query {
-      allMapPoints(filter: { approved: { eq: true } }) {
-        nodes {
-          approved
-          address
-          category
-          contact
-          description
-          email
-          id
-          name
-          phone
-          position
-          title
-        }
-      }
-      site {
-        siteMetadata {
-          title
-          email
-          teaserImage
-        }
+  query {
+    site {
+      siteMetadata {
+        title
+        email
+        teaserImage
       }
     }
+  }
   `);
-
-  data.allMapPoints.nodes.sort((a, b) => a.category.localeCompare(b.category));
 
   return (
     <Layout>
@@ -81,24 +63,6 @@ const Index = () => {
             className="ui text container formcontainer"
             style={{ 'max-width': '1111px !important' }}
           >
-            <h2>Alle Geschäfte als Liste</h2>
-            <p></p>
-
-            <table>
-              <tr>
-                <th>Name</th>
-                <th>Kategorie</th>
-                <th>Kontakt</th>
-              </tr>
-              {data.allMapPoints.nodes.map((item, i) => (
-                <tr key={item.timestamp}>
-                  <td>{item.title}</td>
-                  <td>{get_category_text(item.category)}</td>
-                  <td><span dangerouslySetInnerHTML={{ __html: urlify(item.contact) }} /></td>
-                </tr>
-              ))}
-            </table>
-
             <h2>Wie lege ich einen Eintrag an?</h2>
             <p>
               Sie können weitere Einträge hinzufügen. Wir prüfen neue Einträge
