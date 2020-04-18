@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { urlify, ln2br } from './text-utils';
 import { useStaticQuery, graphql } from 'gatsby';
 import categories from '../components/categories';
@@ -18,7 +18,7 @@ const get_category_text = ident => {
 const includes = (haystack, needle) => haystack.toLowerCase().includes(needle.toLowerCase());
 
 export default function TableView(props) {
-	const [expandedEntryId, setExpandedEntryId] = useState(null)
+	const [expandedEntryId, setExpandedEntryId] = useState(null);
 
 	const data = useStaticQuery(graphql`
 	query {
@@ -42,18 +42,22 @@ export default function TableView(props) {
 
 	const renderExpandedEntry = entry => {
 
-		if (entry.id != expandedEntryId)
+		if(entry.id !== expandedEntryId)
 			return (<></>);
 
 		return (
-			<tr>
-				<td colSpan={3}>
-					<h4>Beschreibung</h4>
-					{ln2br(entry.description)}
-					<h4>Adresse</h4>
-					{ln2br(entry.address)}
-				</td>
-			</tr>
+			<>
+				<tr></tr>
+				<tr>
+					<td colSpan={3}>
+						<h4>Beschreibung</h4>
+						{ln2br(entry.description)}
+						<h4>Adresse</h4>
+						{ln2br(entry.address)}
+						<br /><br /><br />
+					</td>
+				</tr>
+			</>
 		);
 
 	};
@@ -80,8 +84,8 @@ export default function TableView(props) {
 			</tr>
 			{entries.map((item, i) => (
 				<>
-					<tr onClick={setExpandedEntryId(item)}>
-						<td><a href={} onClick={setExpandedEntryId(item)}>{item.title}</a></td>
+					<tr onClick={e => setExpandedEntryId(item.id === expandedEntryId ? null : item.id)}>
+						<td><a href={'javascript:void()'}>{item.title}</a></td>
 						<td>{get_category_text(item.category)}</td>
 						<td><span dangerouslySetInnerHTML={{ __html: urlify(item.contact) }} /></td>
 					</tr>
