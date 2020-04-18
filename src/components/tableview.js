@@ -1,5 +1,5 @@
 import React from "react";
-import { urlify } from './text-utils';
+import { urlify, ln2br } from './text-utils';
 import { useStaticQuery, graphql } from 'gatsby';
 import categories from '../components/categories';
 
@@ -18,6 +18,8 @@ const get_category_text = ident => {
 const includes = (haystack, needle) => haystack.toLowerCase().includes(needle.toLowerCase());
 
 export default function TableView(props) {
+	const [expandedEntryId, setExpandedEntryId] = useState(null)
+
 	const data = useStaticQuery(graphql`
 	query {
 		allMapPoints(filter: { approved: { eq: true } }) {
@@ -37,6 +39,24 @@ export default function TableView(props) {
 		}
 	}
 	`);
+
+	const renderExpandedEntry = entry => {
+
+		if (entry.id != expandedEntryId)
+			return (<></>);
+
+		return (
+			<tr>
+				<td colSpan={3}>
+					<h4>Beschreibung</h4>
+					{ln2br(entry.description)}
+					<h4>Adresse</h4>
+					{ln2br(entry.address)}
+				</td>
+			</tr>
+		);
+
+	};
 
 	let entries = data.allMapPoints.nodes;
 
@@ -59,11 +79,14 @@ export default function TableView(props) {
 				<th>Kontakt</th>
 			</tr>
 			{entries.map((item, i) => (
-				<tr>
-					<td>{item.title}</td>
-					<td>{get_category_text(item.category)}</td>
-					<td><span dangerouslySetInnerHTML={{ __html: urlify(item.contact) }} /></td>
-				</tr>
+				<>
+					<tr onClick={setExpandedEntryId(item)}>
+						<td><a href={} onClick={setExpandedEntryId(item)}>{item.title}</a></td>
+						<td>{get_category_text(item.category)}</td>
+						<td><span dangerouslySetInnerHTML={{ __html: urlify(item.contact) }} /></td>
+					</tr>
+					{renderExpandedEntry(item)}
+				</>
 			))}
 		</table>
 	)
