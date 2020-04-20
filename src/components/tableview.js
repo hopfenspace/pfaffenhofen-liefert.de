@@ -63,51 +63,66 @@ export default function TableView(props) {
 	};
 
 	const postCodes = {
-		"85107": "Baar-Ebenhausen",
-		"85119": "Ernsgaden",
-		"85290": "Geisenfeld",
-		"85302": "Gerolsbach",
-		"86558": "Hohenwart",
-		"85304": "Ilmmünster",
-		"85305": "Jetzendorf",
-		"85077": "Manching",
-		"85126": "Münchsmünster",
-		"85276": "Pfaffenhofen",
-		"85309": "Pörnbach",
-		"85293": "Reichertshausen",
-		"85084": "Reichertshofen",
-		"85296": "Rohrbach",
-		"85298": "Scheyern",
-		"85301": "Schweitenkirchen",
-		"85088": "Vohburg",
-		"85283": "Wolnzach",
-		"85304": "Ehrensberg",	
-		"85307": "Entrischenbrunn",	
-		"85304": "Harres",	
-		"85276": "Hettenshausen",	
-		"85304": "Leiten",	
-		"85304": "Prambach",	
-		"85304": "Schaibmaierhof",	
-		"85307": "Streitberg",	
-		"85304": "Winden",
+		"Baar-Ebenhausen": "85107",
+		"Ernsgaden": "85119",
+		"Geisenfeld": "85290",
+		"Gerolsbach": "85302",
+		"Hohenwart": "86558",
+		"Ilmmünster": "85304",
+		"Jetzendorf": "85305",
+		"Manching": "85077",
+		"Münchsmünster": "85126",
+		"Pfaffenhofen": "85276",
+		"Pörnbach": "85309",
+		"Reichertshausen": "85293",
+		"Reichertshofen": "85084",
+		"Rohrbach": "85296",
+		"Scheyern": "85298",
+		"Schweitenkirchen": "85301",
+		"Vohburg": "85088",
+		"Wolnzach": "85283",
+		"Ehrensberg": "85304",
+		"Entrischenbrunn": "85307",
+		"Harres": "85304",
+		"Hettenshausen": "85276",
+		"Leiten": "85304",
+		"Prambach": "85304",
+		"Schaibmaierhof": "85304",
+		"Streitberg": "85307",
+		"Winden": "85304",
 	};
 	const renderPostalAndName = entry => {
 
-		for(let code in postCodes) {
-			let codeReg = new RegExp(code.toLowerCase(), 'iu');
-			let cityReg = new RegExp(postCodes[code].toLowerCase(), 'iu');
-
-			if(codeReg.test(entry.address) || cityReg.test(entry.address)) {
-				return (
-					<>
-						<br />
-						{code} {postCodes[code]}
-					</>
-				);
+		let city = null;
+		for(let curr in cities) {
+			let reg = new RegExp(curr.toLowerCase(), 'iu');
+			if(reg.test(entry.address)) {
+				city = curr;
+				break;
 			}
 		}
 
-		return (<></>);
+		if(city === null) {
+			for(let curr in cities) {
+				let reg = new RegExp(cities[curr], 'iu');
+				if(reg.test(entry.address)) {
+					city = curr;
+					break;
+				}
+			}
+		}
+
+		if(city === null) {
+			return (<></>);
+		}
+		else {
+			return (
+				<>
+					<br />
+					{cities[city]} {city}
+				</>
+			);
+		}
 	};
 
 	let entries = data.allMapPoints.nodes;
