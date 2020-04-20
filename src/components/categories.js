@@ -1,6 +1,7 @@
 module.exports = [
 	{ ident: 'catering', text: 'Gastronomie', color: '#1289A7' },
 	{ ident: 'food', text: 'Lebensmittel', color: '#7f8c8d' },
+	{ ident: 'hygiene', text: 'Masken & Hygiene', color: '#00d3a5' },
 	{ ident: 'clothing', text: 'Mode & Lifestyle', color: '#D980FA' },
 	{ ident: 'creative', text: 'Kreativ', color: '#40e0d0' },
 	{ ident: 'books', text: 'Bücher & Musik', color: '#30336b' },
