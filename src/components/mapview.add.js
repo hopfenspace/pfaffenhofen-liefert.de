@@ -252,7 +252,7 @@ export function MapAddComponent() {
                 <textarea
                   rows={4}
                   name='address'
-                  placeholder='Wird nur zur internen Verifizierung verwendet. Sollte mit dem gewählten Ort auf der Karte übereinstimmen'
+                  placeholder='Ihre Geschäftsadresse.'
                   defaultValue={content.address}
                   onChange={onChange}
                 />
