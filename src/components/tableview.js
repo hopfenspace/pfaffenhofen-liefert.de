@@ -62,7 +62,7 @@ export default function TableView(props) {
 
 	};
 
-	const postCodes = {
+	const cities = {
 		"Baar-Ebenhausen": "85107",
 		"Ernsgaden": "85119",
 		"Geisenfeld": "85290",
