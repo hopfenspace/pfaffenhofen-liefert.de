@@ -1,7 +1,14 @@
 import React from 'react'
 
+export function escapehtml(s) {
+  return s.replace(/&/g, '&amp;')
+    .replace(/"/g, '&quot;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
+
 export function urlify(inputText) {
-  let replacedText
+  let replacedText = escapehtml(inputText)
 
   // URLs starting with http://, https://, or ftp://
   const replacePattern1 = /(\b(https?|ftp):\/\/[-A-Z0-9+&@#/%?=~_|!:,.;]*[-A-Z0-9+&@#/%=~_|])/gim
@@ -31,6 +38,6 @@ export function urlify(inputText) {
 
 export function ln2br(text) {
   return (
-    <span dangerouslySetInnerHTML={{ __html: text.replace(/\n/g, '<br />') }} />
+    <span dangerouslySetInnerHTML={{ __html: escapehtml(text).replace(/\n/g, '<br />') }} />
   )
 };
