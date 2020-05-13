@@ -12,7 +12,7 @@ export function urlify(inputText) {
 
   // URLs starting with http://, https://, or ftp://
   const replacePattern1 = /(\b(https?|ftp):\/\/[-A-Z0-9+&@#/%?=~_|!:,.;]*[-A-Z0-9+&@#/%=~_|])/gim
-  replacedText = inputText.replace(
+  replacedText = replacedText.replace(
     replacePattern1,
     '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>'
   )
