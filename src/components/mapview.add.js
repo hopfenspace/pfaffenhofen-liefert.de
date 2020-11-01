@@ -335,16 +335,16 @@ export function MapAddComponent() {
       <div className='ui vertical segment'>
         <div className='ui text container formcontainer'>
           <h2>Was passiert mit meinen Daten?</h2>
-          Das Bürgernetz wird Ihre Daten auf einer Karte darstellen. Dadurch sieht man in welchen Geschäften man  im Landkreis Pfaffenhofen trotz geschlossener Türen noch virtuell einkaufen kann.<br />
+          Das Bürgernetz wird Ihre Daten auf einer Karte darstellen. Dadurch sieht man in welchen Geschäften man im Landkreis Pfaffenhofen trotz geschlossener Türen noch einkaufen kann.<br />
           <h2>Wer kann sich eintragen?</h2>
           Es können sich alle eintragen: vom Pizzaservice, über den Weinhändler, den Bastelladen und viele mehr. Das Bürgernetz behält sich vor, Einträge nicht zu veröffentlichen.
           <h2>Kann ich mich wieder löschen lassen?</h2>
-          Das Bürgernetz gibt die erfassten Daten weder intern noch extern an Dritte weiter. Die Daten werden nur für diese Website und diese Karte verwendet. Falls die Redaktion Ihren Eintrag löschen soll, schreiben Sie eine E-Mail an{' '}
+          Die Daten werden nur für diese Website verwendet. Falls die Redaktion Ihren Eintrag löschen soll, schreiben Sie eine E-Mail an{' '}
           <a
             href='mailto:liefert@pfaffenhofen.de'
           >
             liefert@pfaffenhofen.de
-          </a>
+          </a>{' '}
           Andernfalls werden Ihre Daten gelöscht, sobald diese Karte nicht mehr benötigt wird.
         </div>
       </div>
