@@ -35,6 +35,7 @@ export default function TableView(props) {
 				phone
 				position
 				title
+				delivery
 			}
 		}
 	}
@@ -52,6 +53,8 @@ export default function TableView(props) {
 					<td colSpan={3}>
 						<h4>Beschreibung</h4>
 						{ln2br(entry.description)}
+						<h4>Lieferung?</h4>
+						{entry.delivery ? '✅ Lieferung und Abholung' : '❌ Nur Abholung'}
 						<h4>Adresse</h4>
 						{ln2br(entry.address)}
 						<br /><br /><br />
@@ -129,6 +132,9 @@ export default function TableView(props) {
 
 	if(props.categories.length !== 0)
 		entries = entries.filter(x => props.categories.indexOf(x.category) !== -1);
+
+	if(props.onlyDelivery)
+		entries = entries.filter(x => x.delivery);
 
 	if(props.search)
 		entries = entries.filter(x => includes(x.name, props.search)

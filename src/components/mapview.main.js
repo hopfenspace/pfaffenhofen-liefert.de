@@ -8,6 +8,7 @@ export function MapViewComponent() {
 	const [map, setMap] = useState(null)
 	const [selectedCategories, setSelectedCategories] = useState([])
 	const [entrySearch, setEntrySearch] = useState('')
+	const [onlyDelivery, setOnlyDelivery] = useState(false)
 
 	useEffect(() => {
 		if (map) {
@@ -60,7 +61,20 @@ export function MapViewComponent() {
 						/>
 					</div>
 					<br />
-					<TableView categories={selectedCategories} search={entrySearch} />
+					<div className='ui form field'>
+						<input
+							type='checkbox'
+							onChange={e => setOnlyDelivery(!e.target.checked)}
+							checked={!onlyDelivery}
+						/>
+						{' '}Zeige auch Geschäfte die nicht liefern sondern nur Abholung anbieten
+					</div>
+					<br />
+					<TableView
+						onlyDelivery={onlyDelivery}
+						categories={selectedCategories}
+						search={entrySearch}
+					/>
 				</div>
 			</div>
 		</div>

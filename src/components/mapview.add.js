@@ -40,6 +40,7 @@ export function MapAddComponent() {
     category: '',
     title: '',
     description: '',
+    delivery: false,
     contact: '',
     address: '',
     phone: '',
@@ -234,6 +235,16 @@ export function MapAddComponent() {
                   placeholder='Kurzer Text der das Angebot beschreibt.'
                   defaultValue={content.description}
                 />
+              </div>
+
+              <div className='field required'>
+                <label>Lieferung oder nur Abholung?</label>
+                <input
+                  id='delivery-checkbox'
+                  type='checkbox'
+                  onChange={e => setContent({...content, delivery: !!e.target.checked})}
+                />
+                <span class='checkbox-text'>{' '}Wir liefern auch</span>
               </div>
 
               <div className='field required'>
